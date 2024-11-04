@@ -1,0 +1,218 @@
+# Data Job Assessment Checklist
+
+Using TAV Api, Semrush API, Ahrefs API, or Moz API (alternatives to Tav API for avoiding rate limits) these are the steps I need to follow to analyze a job description:
+
+## 1. Job Description Analysis
+### A. Essential Skills Review
+- [ ] Identify and list all explicitly stated technical skills
+  - [ ] Programming languages required
+  - [ ] Database technologies
+  - [ ] Analytics tools
+  - [ ] Cloud platforms
+  - [ ] Machine learning frameworks
+- [ ] Note experience level requirements
+  - [ ] Years of experience
+  - [ ] Industry-specific experience
+  - [ ] Leadership experience if applicable
+- [ ] Document soft skills mentioned
+  - [ ] Communication requirements
+  - [ ] Team collaboration expectations
+  - [ ] Project management skills
+  - [ ] Stakeholder management abilities
+
+### B. Responsibilities Analysis
+- [ ] List primary job functions
+  - [ ] Daily tasks
+  - [ ] Weekly/monthly deliverables
+  - [ ] Project-based work
+  - [ ] Team coordination requirements
+- [ ] Identify reporting structure
+  - [ ] Direct supervisor role
+  - [ ] Team structure
+  - [ ] Cross-functional relationships
+- [ ] Note career growth indicators
+  - [ ] Mentorship opportunities
+  - [ ] Leadership responsibilities
+  - [ ] Project ownership scope
+
+### C. Technical Environment Assessment
+- [ ] Document technology stack
+  - [ ] Current tools and platforms
+  - [ ] Planned technology adoptions
+  - [ ] Legacy systems maintenance
+- [ ] Review development methodologies
+  - [ ] Agile practices
+  - [ ] Sprint cycles
+  - [ ] Code review processes
+- [ ] Analyze data infrastructure
+  - [ ] Data sources
+  - [ ] Data volumes
+  - [ ] Processing requirements
+
+## 2. Company Research
+### A. Company Background
+- [ ] Research company history
+  - [ ] Founding story
+  - [ ] Growth trajectory
+  - [ ] Major milestones
+- [ ] Analyze market position
+  - [ ] Industry ranking
+  - [ ] Competitive advantages
+  - [ ] Market share
+- [ ] Review recent developments
+  - [ ] News coverage
+  - [ ] Press releases
+  - [ ] Product launches
+
+### B. Company Culture
+- [ ] Evaluate stated values
+  - [ ] Mission statement
+  - [ ] Core principles
+  - [ ] DEI initiatives
+- [ ] Research work environment
+  - [ ] Office setup/remote policy
+  - [ ] Work-life balance
+  - [ ] Team activities
+- [ ] Review employee feedback
+  - [ ] Glassdoor reviews
+  - [ ] LinkedIn insights
+  - [ ] Social media presence
+
+### C. Financial Health
+- [ ] Assess stability indicators
+  - [ ] Funding status
+  - [ ] Revenue trends
+  - [ ] Growth rate
+- [ ] Review business model
+  - [ ] Revenue streams
+  - [ ] Client/customer base
+  - [ ] Market sustainability
+- [ ] Check industry outlook
+  - [ ] Sector trends
+  - [ ] Growth potential
+  - [ ] Risk factors
+
+## 3. Self-Assessment
+### A. Skills Mapping
+- [ ] Create skills alignment matrix
+  - [ ] Required vs. possessed skills
+  - [ ] Skill proficiency levels
+  - [ ] Skill gap analysis
+- [ ] Assessment of technical capabilities
+  - [ ] Current technical strengths
+  - [ ] Areas needing development
+  - [ ] Learning curve estimation
+- [ ] Evaluate soft skills match
+  - [ ] Communication style fit
+  - [ ] Leadership capabilities
+  - [ ] Team collaboration approach
+
+### B. Career Goal Alignment
+- [ ] Compare with career objectives
+  - [ ] Short-term goals (1-2 years)
+  - [ ] Medium-term goals (3-5 years)
+  - [ ] Long-term aspirations
+- [ ] Evaluate growth potential
+  - [ ] Skill development opportunities
+  - [ ] Career advancement paths
+  - [ ] Industry exposure
+- [ ] Assess learning opportunities
+  - [ ] Training programs
+  - [ ] Mentorship availability
+  - [ ] Conference/certification support
+
+### C. Personal Fit Analysis
+- [ ] Consider work style compatibility
+  - [ ] Preferred working methods
+  - [ ] Time management approach
+  - [ ] stress handling
+- [ ] Evaluate location/commute
+  - [ ] Remote work options
+  - [ ] Office accessibility
+  - [ ] Travel requirements
+- [ ] Assess work-life integration
+  - [ ] Schedule flexibility
+  - [ ] On-call expectations
+  - [ ] Weekend/holiday policies
+
+## 4. Colleague Engagement
+### A. Team Structure Analysis
+- [ ] Understand team composition
+  - [ ] Team size
+  - [ ] Roles and responsibilities
+  - [ ] Experience levels
+- [ ] Review collaboration patterns
+  - [ ] Communication channels
+  - [ ] Meeting frequency
+  - [ ] Project coordination
+- [ ] Assess team dynamics
+  - [ ] Management style
+  - [ ] Team culture
+  - [ ] Conflict resolution
+
+### B. Networking Strategy
+- [ ] Plan informational interviews
+  - [ ] Identify key team members
+  - [ ] Prepare questions
+  - [ ] Schedule meetings
+- [ ] Research current employees
+  - [ ] LinkedIn profiles
+  - [ ] Professional backgrounds
+  - [ ] Common connections
+- [ ] Document insights gathered
+  - [ ] Day-to-day experiences
+  - [ ] Team challenges
+  - [ ] Success stories
+
+### C. Professional Development
+- [ ] Investigate mentorship programs
+  - [ ] Formal programs
+  - [ ] Informal opportunities
+  - [ ] Peer learning
+- [ ] Review knowledge sharing practices
+  - [ ] Team presentations
+  - [ ] Documentation culture
+  - [ ] Cross-training opportunities
+
+## 5. Compensation Evaluation
+### A. Salary Analysis
+- [ ] Research market rates
+  - [ ] Industry standards
+  - [ ] Location-based adjustments
+  - [ ] Experience-level ranges
+- [ ] Compare total compensation
+  - [ ] Base salary
+  - [ ] Bonus structure
+  - [ ] Stock options/RSUs
+- [ ] Evaluate growth potential
+  - [ ] Raise frequency
+  - [ ] Performance reviews
+  - [ ] Promotion criteria
+
+### B. Benefits Assessment
+- [ ] Review health benefits
+  - [ ] Medical coverage
+  - [ ] Dental/Vision plans
+  - [ ] Health savings options
+- [ ] Evaluate retirement benefits
+  - [ ] 401(k) matching
+  - [ ] Vesting schedule
+  - [ ] Investment options
+- [ ] Analyze additional perks
+  - [ ] Remote work stipend
+  - [ ] Professional development budget
+  - [ ] Wellness programs
+
+### C. Long-term Value
+- [ ] Calculate total package value
+  - [ ] Annual compensation
+  - [ ] Benefits monetary value
+  - [ ] Additional perks value
+- [ ] Project career earnings
+  - [ ] Expected salary growth
+  - [ ] Bonus potential
+  - [ ] Equity appreciation
+- [ ] Consider cost factors
+  - [ ] Tax implications
+  - [ ] Living cost adjustments
+  - [ ] Commute expenses

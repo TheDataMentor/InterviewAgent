@@ -13,6 +13,7 @@ import uvicorn
 from pathlib import Path
 import logging
 import sys
+import time
 
 # Load environment variables
 load_dotenv()
@@ -54,8 +55,17 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR.mkdir(exist_ok=True)
 TEMPLATES_DIR.mkdir(exist_ok=True)
 
+class NoCacheStaticFiles(StaticFiles):
+    async def get_response(self, path: str, scope):
+        response = await super().get_response(path, scope)
+        if response.status_code == 200:
+            response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+            response.headers['Pragma'] = 'no-cache'
+            response.headers['Expires'] = '0'
+        return response
+
 # Mount static files
-app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+app.mount("/static", NoCacheStaticFiles(directory=str(STATIC_DIR)), name="static")
 
 # Setup templates
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
@@ -78,9 +88,13 @@ async def favicon():
 async def home(request: Request):
     try:
         logger.info("Serving index.html")
+        timestamp = int(time.time())
         return templates.TemplateResponse(
             "index.html", 
-            {"request": request}
+            {
+                "request": request,
+                "timestamp": timestamp
+            }
         )
     except Exception as e:
         logger.error(f"Error serving index.html: {str(e)}")
@@ -109,21 +123,22 @@ async def get_applications():
 @app.post("/analyze-job/")
 async def analyze_job(request: Request):
     try:
-        # Parse the request body
         body = await request.json()
         job_description = body.get('job_description')
         
         if not job_description:
             raise HTTPException(status_code=400, detail="Job description is required")
             
-        logger.info(f"Analyzing job description: {job_description[:100]}...")  # Log first 100 chars
+        logger.info(f"Starting job analysis for description: {job_description[:100]}...")
         
+        # Call the interview manager to analyze the job
         analysis = await interview_manager.analyze_job_description(job_description)
-        logger.info("Analysis complete")
         
+        logger.info("Job analysis completed successfully")
         return {"analysis": analysis}
+        
     except Exception as e:
-        logger.error(f"Error analyzing job: {str(e)}")
+        logger.error(f"Error in analyze_job: {str(e)}")
         raise HTTPException(status_code=400, detail=str(e))
 
 @app.post("/optimize-resume/")

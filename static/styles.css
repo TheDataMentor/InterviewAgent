@@ -16,6 +16,15 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.section.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
 }
 
 h1 {
@@ -46,16 +55,64 @@ textarea {
 }
 
 button {
+    position: relative;
+    min-width: 150px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px 24px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-loader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-loader .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.button-text, .button-loader {
+    transition: opacity 0.3s ease;
+}
+
+button.loading .button-text {
+    display: none;
+}
+
+button.loading .button-loader {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .result-box {
@@ -172,4 +229,254 @@ button:hover {
     padding: 20px;
     color: #666;
     font-style: italic;
-} 
+}
+
+.agent-flow {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.agent-step {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.agent-step:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #666;
+}
+
+.agent-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.agent-step.active {
+    color: #007bff;
+}
+
+.agent-step.completed {
+    color: #28a745;
+}
+
+.agent-description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.agent-working {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.section {
+    opacity: 0.7;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.section.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.data-flow {
+    padding: 10px;
+    background: #f8f9fa;
+    border-left: 3px solid #007bff;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 0.2em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.agent-working {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.agent-result {
+    transition: opacity 0.3s ease;
+}
+
+.agent-step.active {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.analysis-result {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.analysis-section {
+    margin-bottom: 20px;
+}
+
+.analysis-section h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.nested-object {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.object-item {
+    margin: 5px 0;
+}
+
+.error {
+    color: #e74c3c;
+    padding: 10px;
+    background-color: #fdf3f2;
+    border-left: 4px solid #e74c3c;
+    margin: 10px 0;
+}
+
+.agent-working {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+#jobDescription {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+#jobDescription:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+#analyzeButton {
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#analyzeButton:hover {
+    background-color: #0056b3;
+}
+
+#analyzeButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.feedback-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feedback-message.info {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.feedback-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}

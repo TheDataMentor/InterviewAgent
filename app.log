@@ -102,3 +102,157 @@
 2024-11-04 14:07:28,277 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
 2024-11-04 14:07:28,277 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
 2024-11-04 14:07:28,277 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:09:22,638 - app - INFO - Starting server with:
+2024-11-04 15:09:22,638 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:09:22,638 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:09:22,638 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:09:22,638 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:09:22,638 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:09:43,708 - app - INFO - Request path: /
+2024-11-04 15:09:43,710 - app - INFO - Serving index.html
+2024-11-04 15:09:43,717 - app - INFO - Response status: 200
+2024-11-04 15:09:43,898 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:09:43,898 - app - INFO - Request path: /static/script.js
+2024-11-04 15:09:43,918 - app - INFO - Response status: 200
+2024-11-04 15:09:43,919 - app - INFO - Response status: 200
+2024-11-04 15:09:44,143 - app - INFO - Request path: /applications/
+2024-11-04 15:09:44,144 - app - INFO - Response status: 200
+2024-11-04 15:12:45,628 - app - INFO - Request path: /
+2024-11-04 15:12:45,631 - app - INFO - Serving index.html
+2024-11-04 15:12:45,646 - app - INFO - Response status: 200
+2024-11-04 15:12:46,063 - app - INFO - Request path: /applications/
+2024-11-04 15:12:46,064 - app - INFO - Response status: 200
+2024-11-04 15:13:19,878 - app - INFO - Request path: /analyze-job/
+2024-11-04 15:13:19,886 - app - INFO - Analyzing job description: Known for being a great place to work and build a career, KPMG provides audit, tax and advisory serv...
+2024-11-04 15:13:43,229 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-04 15:13:43,253 - app - INFO - Analysis complete
+2024-11-04 15:13:43,253 - app - INFO - Response status: 200
+2024-11-04 15:21:50,997 - app - INFO - Request path: /
+2024-11-04 15:21:51,035 - app - INFO - Serving index.html
+2024-11-04 15:21:51,077 - app - INFO - Response status: 200
+2024-11-04 15:21:51,129 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:21:51,134 - app - INFO - Request path: /static/script.js
+2024-11-04 15:21:51,144 - app - INFO - Response status: 200
+2024-11-04 15:21:51,145 - app - INFO - Response status: 200
+2024-11-04 15:21:51,175 - app - INFO - Request path: /applications/
+2024-11-04 15:21:51,180 - app - INFO - Response status: 200
+2024-11-04 15:30:01,072 - app - INFO - Request path: /
+2024-11-04 15:30:01,082 - app - INFO - Serving index.html
+2024-11-04 15:30:01,094 - app - INFO - Response status: 200
+2024-11-04 15:30:01,154 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:30:01,156 - app - INFO - Request path: /static/script.js
+2024-11-04 15:30:01,182 - app - INFO - Response status: 304
+2024-11-04 15:30:01,183 - app - INFO - Response status: 304
+2024-11-04 15:30:01,189 - app - INFO - Request path: /applications/
+2024-11-04 15:30:01,193 - app - INFO - Response status: 200
+2024-11-04 15:30:29,938 - app - INFO - Request path: /
+2024-11-04 15:30:29,941 - app - INFO - Serving index.html
+2024-11-04 15:30:29,944 - app - INFO - Response status: 200
+2024-11-04 15:30:30,022 - app - INFO - Request path: /applications/
+2024-11-04 15:30:30,025 - app - INFO - Response status: 200
+2024-11-04 15:30:52,622 - app - INFO - Starting server with:
+2024-11-04 15:30:52,622 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:30:52,622 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:30:52,622 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:30:52,622 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:30:52,622 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:31:01,458 - app - INFO - Request path: /
+2024-11-04 15:31:01,459 - app - INFO - Serving index.html
+2024-11-04 15:31:01,464 - app - INFO - Response status: 200
+2024-11-04 15:31:01,487 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:31:01,488 - app - INFO - Request path: /static/script.js
+2024-11-04 15:31:01,494 - app - INFO - Response status: 304
+2024-11-04 15:31:01,494 - app - INFO - Response status: 304
+2024-11-04 15:31:01,514 - app - INFO - Request path: /applications/
+2024-11-04 15:31:01,515 - app - INFO - Response status: 200
+2024-11-04 15:32:40,861 - app - INFO - Starting server with:
+2024-11-04 15:32:40,861 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:32:40,861 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:32:40,862 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:32:40,862 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:32:40,862 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:32:47,053 - app - INFO - Request path: /
+2024-11-04 15:32:47,062 - app - INFO - Serving index.html
+2024-11-04 15:32:47,112 - app - INFO - Response status: 200
+2024-11-04 15:32:47,153 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:32:47,155 - app - INFO - Request path: /static/script.js
+2024-11-04 15:32:47,225 - app - INFO - Response status: 200
+2024-11-04 15:32:47,225 - app - INFO - Response status: 200
+2024-11-04 15:32:47,234 - app - INFO - Request path: /applications/
+2024-11-04 15:32:47,235 - app - INFO - Response status: 200
+2024-11-04 15:34:23,029 - app - INFO - Starting server with:
+2024-11-04 15:34:23,029 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:34:23,029 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:34:23,029 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:34:23,029 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:34:23,029 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:34:24,044 - app - INFO - Request path: /
+2024-11-04 15:34:24,045 - app - INFO - Serving index.html
+2024-11-04 15:34:24,057 - app - INFO - Response status: 200
+2024-11-04 15:34:24,108 - app - INFO - Request path: /static/script.js
+2024-11-04 15:34:24,108 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:34:24,114 - app - INFO - Response status: 304
+2024-11-04 15:34:24,114 - app - INFO - Response status: 304
+2024-11-04 15:34:24,152 - app - INFO - Request path: /applications/
+2024-11-04 15:34:24,153 - app - INFO - Response status: 200
+2024-11-04 15:35:12,236 - app - INFO - Starting server with:
+2024-11-04 15:35:12,236 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:35:12,236 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:35:12,236 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:35:12,236 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:35:12,236 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:35:43,535 - app - INFO - Starting server with:
+2024-11-04 15:35:43,535 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:35:43,535 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:35:43,536 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:35:43,536 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:35:43,536 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html
+2024-11-04 15:37:30,183 - app - INFO - Request path: /
+2024-11-04 15:37:30,189 - app - INFO - Serving index.html
+2024-11-04 15:37:30,205 - app - INFO - Response status: 200
+2024-11-04 15:37:30,263 - app - INFO - Request path: /static/script.js
+2024-11-04 15:37:30,266 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:37:30,278 - app - INFO - Response status: 200
+2024-11-04 15:37:30,278 - app - INFO - Response status: 200
+2024-11-04 15:37:30,285 - app - INFO - Request path: /applications/
+2024-11-04 15:37:30,286 - app - INFO - Response status: 200
+2024-11-04 15:37:30,481 - app - INFO - Request path: /favicon.ico
+2024-11-04 15:37:30,482 - app - INFO - Response status: 200
+2024-11-04 15:39:18,188 - app - INFO - Request path: /
+2024-11-04 15:39:18,190 - app - INFO - Serving index.html
+2024-11-04 15:39:18,191 - app - INFO - Response status: 200
+2024-11-04 15:39:18,232 - app - INFO - Request path: /static/script.js
+2024-11-04 15:39:18,235 - app - INFO - Response status: 200
+2024-11-04 15:39:18,238 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:39:18,240 - app - INFO - Response status: 200
+2024-11-04 15:39:18,279 - app - INFO - Request path: /applications/
+2024-11-04 15:39:18,284 - app - INFO - Response status: 200
+2024-11-04 15:39:18,405 - app - INFO - Request path: /favicon.ico
+2024-11-04 15:39:18,412 - app - INFO - Response status: 200
+2024-11-04 15:41:06,318 - app - INFO - Request path: /
+2024-11-04 15:41:06,332 - app - INFO - Serving index.html
+2024-11-04 15:41:06,352 - app - INFO - Response status: 200
+2024-11-04 15:41:06,378 - app - INFO - Request path: /static/styles.css
+2024-11-04 15:41:06,378 - app - INFO - Request path: /static/script.js
+2024-11-04 15:41:06,381 - app - INFO - Response status: 200
+2024-11-04 15:41:06,382 - app - INFO - Response status: 200
+2024-11-04 15:41:06,420 - app - INFO - Request path: /applications/
+2024-11-04 15:41:06,421 - app - INFO - Response status: 200
+2024-11-04 15:41:06,527 - app - INFO - Request path: /favicon.ico
+2024-11-04 15:41:06,528 - app - INFO - Response status: 200
+2024-11-04 15:41:21,897 - app - INFO - Request path: /analyze-job/
+2024-11-04 15:41:21,901 - app - INFO - Starting job analysis for description: Known for being a great place to work and build a career, KPMG provides audit, tax and advisory serv...
+2024-11-04 15:41:43,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-04 15:41:43,658 - app - INFO - Job analysis completed successfully
+2024-11-04 15:41:43,659 - app - INFO - Response status: 200
+2024-11-04 15:42:19,818 - app - INFO - Request path: /optimize-resume/
+2024-11-04 15:42:19,823 - app - INFO - Optimizing resume...
+2024-11-04 15:42:47,420 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-04 15:42:47,424 - app - INFO - Resume optimization complete
+2024-11-04 15:42:47,425 - app - INFO - Response status: 200
+2024-11-04 15:43:49,680 - app - INFO - Starting server with:
+2024-11-04 15:43:49,680 - app - INFO - Static directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static
+2024-11-04 15:43:49,680 - app - INFO - Templates directory: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates
+2024-11-04 15:43:49,680 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/styles.css
+2024-11-04 15:43:49,681 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/static/script.js
+2024-11-04 15:43:49,681 - app - INFO - Found required file: /Users/brandonjackson/Documents/GitHub/InterviewAgent/templates/index.html

@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Job Application Tracker</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <title>Job Application Research Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}?v={{ timestamp }}">
 </head>
 <body>
     <div class="container">
-        <h1>Job Application Tracker</h1>
+        <h1>Job Application Research Assistant</h1>
         
-        <div class="section">
-            <h2>Add New Application</h2>
+        <!-- Agent Flow Progress -->
+        <div class="agent-flow">
+            <div class="agent-step" id="step1">
+                <div class="agent-icon">🔍</div>
+                <h3>Job Search Agent</h3>
+                <p>Analyzing job requirements</p>
+            </div>
+            <div class="agent-step" id="step2">
+                <div class="agent-icon">📝</div>
+                <h3>Resume Builder Agent</h3>
+                <p>Optimizing your resume</p>
+            </div>
+            <div class="agent-step" id="step3">
+                <div class="agent-icon">🎯</div>
+                <h3>Application Tracker Agent</h3>
+                <p>Managing applications</p>
+            </div>
+            <div class="agent-step" id="step4">
+                <div class="agent-icon">🤝</div>
+                <h3>Interview Prep Agent</h3>
+                <p>Preparing for interviews</p>
+            </div>
+        </div>
+
+        <!-- Job Analysis Section -->
+        <div class="section" id="jobAnalysisSection">
+            <h2>1. Job Analysis</h2>
+            <p class="agent-description">The Job Search Agent will analyze the job description to extract key requirements and insights.</p>
+            <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+            <button id="analyzeButton" onclick="analyzeJob()">
+                <span class="button-text">Analyze Job</span>
+                <div class="button-loader hidden">
+                    <div class="spinner"></div>
+                    <span>Analyzing...</span>
+                </div>
+            </button>
+            <div id="analysisResult" class="result-box">
+                <div class="agent-working hidden">
+                    <div class="spinner"></div>
+                    <p>Job Search Agent is analyzing...</p>
+                </div>
+                <div class="agent-result hidden"></div>
+            </div>
+        </div>
+
+        <!-- Resume Optimization Section -->
+        <div class="section" id="resumeSection">
+            <h2>2. Resume Optimization</h2>
+            <p class="agent-description">The Resume Builder Agent will tailor your resume based on the job analysis.</p>
+            <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+            <button onclick="optimizeResume()" id="optimizeButton" disabled>Optimize Resume</button>
+            <div id="optimizationResult" class="result-box">
+                <div class="agent-working hidden">
+                    <div class="spinner"></div>
+                    <p>Resume Builder Agent is optimizing...</p>
+                </div>
+                <div class="agent-result hidden"></div>
+            </div>
+        </div>
+
+        <!-- Application Tracking Section -->
+        <div class="section" id="applicationSection">
+            <h2>3. Application Management</h2>
+            <p class="agent-description">The Application Tracker Agent will help you manage your job applications.</p>
             <form id="applicationForm">
                 <input type="text" id="company" placeholder="Company Name" required>
                 <input type="text" id="position" placeholder="Position" required>
@@ -19,31 +81,26 @@
                     <option value="2" selected>Medium Priority</option>
                     <option value="3">High Priority</option>
                 </select>
-                <button type="submit">Add Application</button>
+                <button type="submit">Track Application</button>
             </form>
-        </div>
-
-        <div class="section">
-            <h2>Job Description Analysis</h2>
-            <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
-            <button onclick="analyzeJob()">Analyze</button>
-            <div id="analysisResult" class="result-box"></div>
-        </div>
-
-        <div class="section">
-            <h2>Resume Optimization</h2>
-            <textarea id="resume" placeholder="Paste your resume here..."></textarea>
-            <textarea id="jobRequirements" placeholder="Paste job requirements here..."></textarea>
-            <button onclick="optimizeResume()">Optimize</button>
-            <div id="optimizationResult" class="result-box"></div>
-        </div>
-
-        <div class="section">
-            <h2>Applications</h2>
             <div id="applicationsList"></div>
+        </div>
+
+        <!-- Interview Preparation Section -->
+        <div class="section" id="interviewSection">
+            <h2>4. Interview Preparation</h2>
+            <p class="agent-description">The Interview Prep Agent will generate questions and scenarios based on the job analysis.</p>
+            <button onclick="prepareInterview()" id="prepButton" disabled>Generate Interview Prep</button>
+            <div id="interviewResult" class="result-box">
+                <div class="agent-working hidden">
+                    <div class="spinner"></div>
+                    <p>Interview Prep Agent is working...</p>
+                </div>
+                <div class="agent-result hidden"></div>
+            </div>
         </div>
     </div>
 
-    <script src="{{ url_for('static', path='/script.js') }}"></script>
+    <script src="{{ url_for('static', path='/script.js') }}?v={{ timestamp }}"></script>
 </body>
 </html> 

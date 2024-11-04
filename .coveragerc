@@ -1,9 +1,12 @@
 [run]
 source = .
-omit = 
+branch = True
+omit =
     */tests/*
     */venv/*
     setup.py
+    conftest.py
+    test_*.py
 
 [report]
 exclude_lines =
@@ -12,4 +15,3 @@ exclude_lines =
     raise NotImplementedError
     if __name__ == .__main__.:
     pass
-    raise ImportError 
