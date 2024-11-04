@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: interview_agent
+Version: 0.1
+Requires-Dist: python-dotenv
+Requires-Dist: pytest
+Requires-Dist: pytest-asyncio
+Requires-Dist: pytest-mock
+Requires-Dist: openai>=1.0.0
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: jinja2
+Requires-Dist: pydantic

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Tracker</h1>
+        
+        <div class="section">
+            <h2>Add New Application</h2>
+            <form id="applicationForm">
+                <input type="text" id="company" placeholder="Company Name" required>
+                <input type="text" id="position" placeholder="Position" required>
+                <input type="text" id="jobLink" placeholder="Job Link (optional)">
+                <select id="priority">
+                    <option value="1">Low Priority</option>
+                    <option value="2" selected>Medium Priority</option>
+                    <option value="3">High Priority</option>
+                </select>
+                <button type="submit">Add Application</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Job Description Analysis</h2>
+            <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+            <button onclick="analyzeJob()">Analyze</button>
+            <div id="analysisResult" class="result-box"></div>
+        </div>
+
+        <div class="section">
+            <h2>Resume Optimization</h2>
+            <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+            <textarea id="jobRequirements" placeholder="Paste job requirements here..."></textarea>
+            <button onclick="optimizeResume()">Optimize</button>
+            <div id="optimizationResult" class="result-box"></div>
+        </div>
+
+        <div class="section">
+            <h2>Applications</h2>
+            <div id="applicationsList"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html> 
